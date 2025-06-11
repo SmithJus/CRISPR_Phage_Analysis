@@ -1,0 +1,24 @@
+##############################
+# testing dRep on an individual sample
+# 2025-04-01
+##############################
+
+universe = vanilla
+executable = dRep_test.sh
+
+#transfer_input_files = R1-2010-08-31_S37_L001_R1_001.fastq.gz, R1-2010-08-31_S37_L001_R2_001.fastq.gz
+
+#Logs info
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/dRep_$(cluster)_$(sample).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/dRep_$(cluster)_$(sample).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/dRep_$(cluster)_$(sample).err
+
+#Operational parameters
+request_cpus = 8
+request_memory = 100GB
+request_disk = 10GB
+
+#Variables
+location = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis
+arguments = $(location) 
+queue 

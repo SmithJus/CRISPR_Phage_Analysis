@@ -1,0 +1,22 @@
+##############################
+# use seqkit to get basic stats from metagenomes
+# 2025-05-12
+##############################
+
+universe = vanilla
+executable = seqkit.sh
+
+#Logs info
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/seqkit_$(cluster).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/seqkit_$(cluster).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/seqkit_$(cluster).err
+
+#Operational parameters
+request_cpus = 4
+request_memory = 20GB
+request_disk = 10GB
+
+#Variables
+location = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis
+arguments = $(location) 
+queue

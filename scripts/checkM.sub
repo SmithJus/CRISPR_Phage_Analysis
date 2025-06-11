@@ -1,0 +1,24 @@
+##############################
+# use checkM 
+# 2025-03-27
+##############################
+
+universe = vanilla
+executable = checkM.sh
+
+
+#Logs info
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/checkM_$(cluster)_$(sample).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/checkM_$(cluster)_$(sample).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/checkM_$(cluster)_$(sample).err
+
+#Operational parameters
+request_cpus = 16
+request_memory = 200GB
+request_disk = 10GB
+
+#Variables
+location = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis
+arguments = $(sample) $(location) $(request_cpus)
+queue sample from samples.txt
+

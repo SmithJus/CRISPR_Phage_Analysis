@@ -1,0 +1,23 @@
+##############################
+# map all gtdbtk bins to samples using coverM
+# 2025-05-06
+##############################
+
+universe = vanilla
+executable = coverm_all_MAGs.sh
+
+#Logs info
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/coverm_$(cluster).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/coverm_$(cluster).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/coverm_$(cluster).err
+
+#Operational parameters
+request_cpus = 16
+request_memory = 200GB
+request_disk = 10GB
+
+#Variables
+location = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis
+arguments = $(bin) $(location) $(request_cpus)
+queue bin from gtdbtk_bins_for_coverm.tsv
+

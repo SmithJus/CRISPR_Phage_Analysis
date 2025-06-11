@@ -1,0 +1,9 @@
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2005-06-14-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2007-09-17-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2008-04-24-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2009-02-02-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2010-07-15-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2010-10-04-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2011-01-10-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2012-01-23-EBPR/contigs.fasta
+/home/glbrc.org/jusmith/CRISPR_Phage_Analysis/output/assemblies_2013-05-23-EBPR/contigs.fasta

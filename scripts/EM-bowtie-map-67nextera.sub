@@ -1,0 +1,16 @@
+##############################
+# Bowtie2 map TYMEFLIES reads to 16cyanoMAGs + geosmin scaffold
+# 2023-10-03
+##############################
+
+executable = /home/GLBRCORG/trina.mcmahon/ebpr/code/bowtie-mapping-67nextera.sh
+
+request_cpus = 6
+request_memory = 30GB
+arguments = $(reads) $(sampleID)
+
+output = /home/glbrc.org/trina.mcmahon/ebpr/outs/$(Cluster)_bowtie-mapping.out
+error = /home/glbrc.org/trina.mcmahon/ebpr/errs/$(Cluster)_bowtie-mapping.err
+log = /home/glbrc.org/trina.mcmahon/ebpr/logs/$(Cluster)_bowtie-mapping.log
+
+queue reads,sampleID from /home/glbrc.org/trina.mcmahon/ebpr/analysis/coverM/R1_67nextera_vs_accumrefs/mapping_file.txt

@@ -1,0 +1,25 @@
+##############################
+# run defensefinder on all the mOTUs
+# 2025-05-12
+##############################
+
+universe = vanilla
+executable = defensefinder.sh
+
+#Logs info
+# putting just cluster outputs logs,output,error to a single location
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/defensefinder_$(bin)_$(cluster).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/defensefinder_$(bin)_$(cluster).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/defensefinder_$(bin)_$(cluster).err
+
+#Operational parameters
+request_cpus = 4
+request_memory = 20GB
+request_disk = 10GB
+max_idle = 100
+
+#Variables
+location = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis
+arguments = $(bin) $(location)
+queue bin from MAGs_for_dFinder.txt
+

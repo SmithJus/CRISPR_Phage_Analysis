@@ -1,0 +1,25 @@
+##############################
+# append bins refined bins with sample names
+# 2025-04-16
+##############################
+
+universe = vanilla
+executable = append_MAGs.sh
+
+#transfer_input_files = R1-2010-08-31_S37_L001_R1_001.fastq.gz, R1-2010-08-31_S37_L001_R2_001.fastq.gz
+
+#Logs info
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/append_$(cluster)_$(sample).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/append_$(cluster)_$(sample).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/append_$(cluster)_$(sample).err
+
+#Operational parameters
+request_cpus = 4
+request_memory = 20GB
+request_disk = 10GB
+
+#Variables
+location = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis
+arguments = $(sample) $(location) 
+queue sample from samples.txt
+

@@ -1,0 +1,16 @@
+universe = vanilla
+executable = spades_ex.sh
+
+#transfer_input_files = R1-2010-08-31_S37_L001_R1_001.fastq.gz, R1-2010-08-31_S37_L001_R2_001.fastq.gz
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/spades_ex_$(sample).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/spades_ex_$(sample).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/spades_ex_$(sample).err
+
+request_cpus = 16
+request_memory = 200GB
+request_disk = 10GB
+
+arguments = $(sample)
+queue sample from samples.txt
+ 
+

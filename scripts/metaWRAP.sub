@@ -1,0 +1,21 @@
+##############################
+# metaWRAP binning EBPRR1 assemblies
+# 2025-03-19
+##############################
+
+universe = vanilla
+executable = metaWRAP.sh
+
+#transfer_input_files = R1-2010-08-31_S37_L001_R1_001.fastq.gz, R1-2010-08-31_S37_L001_R2_001.fastq.gz
+log = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/metawrap_$(cluster)_$(sample).log
+output = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/metawrap_$(cluster)_$(sample).out
+error = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/logs/metawrap_$(cluster)_$(sample).err
+
+request_cpus = 16
+request_memory = 200GB
+request_disk = 10GB
+
+location = /home/glbrc.org/jusmith/CRISPR_Phage_Analysis/
+arguments = $(sample) $(location) $(request_cpus)
+queue sample from samples.txt
+

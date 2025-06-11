@@ -1,0 +1,5 @@
+/mnt/bigdata/lab_data/mcmahon_lab/jgi/EBPRR120100312_FD/Filtered_Raw_Data/52910.2.496400.CAACGAAGAT-CCCATTGTGT.filter-METAGENOME.fastq.gz	EBPRR120100312
+/mnt/bigdata/lab_data/mcmahon_lab/jgi/EBPRR120100325_FD/Filtered_Raw_Data/52910.2.496400.ACTCACCTAT-ATGTGCACGT.filter-METAGENOME.fastq.gz	EBPRR120100325
+/mnt/bigdata/lab_data/mcmahon_lab/jgi/EBPRR120100408_FD/Filtered_Raw_Data/52910.2.496400.TCAACTCCAT-GCCAAATCGT.filter-METAGENOME.fastq.gz	EBPRR120100408
+/mnt/bigdata/lab_data/mcmahon_lab/jgi/EBPRR120100422_FD/Filtered_Raw_Data/52910.2.496400.TTAGAGCCAT-CTTGCCTAGT.filter-METAGENOME.fastq.gz	EBPRR120100422
+/mnt/bigdata/lab_data/mcmahon_lab/jgi/EBPRR120100506_FD/Filtered_Raw_Data/52910.2.496400.TGCTACTCAT-GTACGCTAGT.filter-METAGENOME.fastq.gz	EBPRR120100506
